@@ -1,8 +1,1 @@
-{:did        "did:web:etzhayyim.github.io:com-etzhayyim-watatsumi"
- :handle     "watatsumi.etzhayyim.com"
- :ipns-key   "watatsumi-actor"
- :graph-type "com.etzhayyim.watatsumi.graph"
- :published  "2026-06-28"
- :bundle [["data" "data"]
-          [".well-known/did.json" "did.json"]
-          ["README.md" "README.md"]]}
+[{:db/id -1, :actor/did "did:web:etzhayyim.github.io:com-etzhayyim-watatsumi", :actor/handle "watatsumi.etzhayyim.com", :actor/ipns-key "watatsumi-actor", :actor/graph-type "com.etzhayyim.watatsumi.graph", :actor/published "2026-06-28", :actor/bundle "[[\"data\" \"data\"] [\".well-known/did.json\" \"did.json\"] [\"README.md\" \"README.md\"]]"}]
