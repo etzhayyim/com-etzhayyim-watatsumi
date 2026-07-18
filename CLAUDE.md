@@ -1,4 +1,4 @@
-# 20-actors/watatsumi — CLAUDE.md
+# . — CLAUDE.md
 
 ## Identity
 
@@ -57,7 +57,7 @@ Operational counterpart to **watatsuna 綿津綱** (the world submarine-cable-ne
 
 ## Constitutional Gates (G1–G14)
 
-**IMMUTABLE R0–R3.** Stored in `manifest.jsonld` under `watatsumi:constitutionalGates`. Changes require Council Lv6+ supermajority + new ADR.
+**IMMUTABLE R0–R3.** Stored in `wire/manifest.jsonld` under `watatsumi:constitutionalGates`. Changes require Council Lv6+ supermajority + new ADR.
 
 See `ADR-2605252200` §4 for definitions. Key enforcement:
 
@@ -172,7 +172,7 @@ See `ADR-2605252200` §4 for definitions. Key enforcement:
 
 **Deployment** (R1+):
 ```bash
-cd 20-actors/watatsumi
+cd .
 e7m actor deploy .
 ```
 
@@ -183,7 +183,7 @@ Returns error in R0; waits for R1 ADR activation.
 **Smoke test**: Verify all 9 cells import without exception:
 
 ```bash
-cd 20-actors/watatsumi
+cd .
 python -c "from cells.hull_ring_fabrication import HullRingFabricationCell; assert HullRingFabricationCell"
 python -c "from cells.section_assembly import SectionAssemblyCell; assert SectionAssemblyCell"
 python -c "from cells.weld_inspection import WeldInspectionCell; assert WeldInspectionCell"
@@ -199,7 +199,7 @@ All should pass import; `.solve()` calls should raise `RuntimeError("watatsumi R
 
 ## Related Files
 
-- `/20-actors/watatsumi/manifest.jsonld` — DID + cell registry + gates + non-goals
+- `/./manifest.jsonld` — DID + cell registry + gates + non-goals
 - `/90-docs/adr/2605252200-watatsumi-civilian-submersible-r0.md` — Master ADR
-- `/20-actors/kuni-umi/README.md` — Funamori surface sibling (ADR-2605242745)
+- `/orgs/etzhayyim/com-etzhayyim-kuni-umi/README.md` — Funamori surface sibling (ADR-2605242745)
 - `/CLAUDE.md` — Religious-corp status table row 45

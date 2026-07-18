@@ -1,0 +1,6 @@
+{:migration/id :watatsumi/standalone-cutover :status :complete
+ :source/root "20-actors/watatsumi"
+ :target/repository "orgs/etzhayyim/com-etzhayyim-watatsumi"
+ :canonical/format :edn :wire/root "wire" :pruned #{:go :tinygo :shell}
+ :root/cleanup ["20-actors/watatsumi"
+                "00-contracts/lexicons/com/etzhayyim/watatsumi"]}

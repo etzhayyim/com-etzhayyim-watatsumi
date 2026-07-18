@@ -8,7 +8,7 @@ Civilian only — naval weapons / nuclear propulsion / cable sabotage structural
 |---|---|
 | Lexicons | ✅ 8 under `com.etzhayyim.watatsumi.*` (pressureHull/sectionAssembly/weldInspection/systemIntegration/sectionJoining/pressureTest/seaTrial/silenSubmersibleReview) |
 | Cells | ✅ 9 path-reserved; class_certification_binder now parses (syntax bug fixed, below) |
-| Manifest | ✅ `manifest.jsonld` — `constitutionalGates` (G1–G14) machine-readable |
+| Manifest | ✅ `wire/manifest.jsonld` — `constitutionalGates` (G1–G14) machine-readable |
 | Tests | ✅ `70-tools/scripts/audit/test_watatsumi_invariants.py` — **18 passed** (charter invariants, pre-existing) + `py/test_agent.py` |
 | Methods | 🟡 cells R0 (`.solve()` Council-gated) |
 
